@@ -1,0 +1,228 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html,
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background-image: linear-gradient(to top left, #753682 0%, #102abf 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  position: relative;
+  width: 100rem;
+  height: 60rem;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 10px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur();
+  filter: blur();
+  overflow: hidden;
+}
+
+.show-modal {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.75rem 3.5rem;
+  position: absolute;
+  left: 49rem;
+  top: 20rem;
+  border: none;
+  background-color: #fff;
+  color: #444;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  transform: translateX(-50%);
+  text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.25);
+}
+
+.show-modal:active {
+  transform: translate(-50%, 5px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
+}
+.show-modal:focus {
+  outline: none;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 28rem;
+  color: #fff;
+  text-shadow: 0.12rem 0.12rem rgba(0, 0, 0, 0.25);
+}
+
+p {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 5rem;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.25);
+}
+
+span {
+  position: absolute;
+  bottom: 20rem;
+  left: 46.98rem;
+  font-size: 1.2rem;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  height: 85%;
+  /* background-color: rgba(85, 66, 196, 0.9); */
+  background-color: rgb(49, 49, 49);
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(14, 34, 99, 0.165);
+  backdrop-filter: blur(5px);
+  z-index: 5;
+}
+
+.hidden {
+  display: none;
+}
+
+.reset-button {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border-style: none;
+  position: absolute;
+  top: 1.8rem;
+  cursor: pointer;
+  transform: translateX(-20%);
+  transition: all 0.2s;
+}
+
+.reset-button:active {
+  transform: translate(-20%, 5px);
+}
+
+.h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-left: -1.8rem;
+}
+
+.h1 {
+  position: relative;
+  bottom: 24rem;
+  font-size: 4rem;
+  font-family: sans-serif;
+  letter-spacing: 1rem;
+}
+
+.number-holder {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color: #fff;
+  position: relative;
+  bottom: 22rem;
+  margin: auto;
+}
+
+.secrete-number {
+  color: #000;
+  font-size: 10rem;
+  position: relative;
+  top: 7.8rem;
+}
+
+.check-number {
+  width: 10rem;
+  height: 7rem;
+  background-color: #fff;
+  font-size: 5rem;
+  text-align: center;
+  font-weight: bold;
+  border-style: none;
+  position: relative;
+  bottom: 22rem;
+}
+
+.checker {
+  position: relative;
+  bottom: 23.15rem;
+  padding: 2.5rem;
+  left: 1.05rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 0 0.5rem 0.5rem 0;
+  border-style: none;
+  color: #fff;
+  background-color: rgb(233, 41, 128);
+  cursor: pointer;
+  transition: all 0.3s;
+  transform: translateX(-10%);
+}
+
+.checker:active {
+  transform: translate(-12%, 1px);
+}
+
+.info {
+  position: relative;
+  font-size: 2rem;
+  bottom: 31.5rem;
+  color: #fff;
+  left: 52rem;
+  line-height: 3.6rem;
+}
+
+.score,
+.highscore,
+.lowestscore {
+  position: relative;
+  font-size: 2rem;
+  bottom: 0rem;
+  color: #fff;
+  left: 0rem;
+}
+
+.message {
+  position: absolute;
+  font-size: 3rem;
+  color: #fff;
+  bottom: 16rem;
+  left: 55rem;
+}

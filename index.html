@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Advanced Guess Game</title>
+  </head>
+  <body>
+    <main>
+      <button class="show-modal">Start Guess Game 👻</button>
+      <h1>DISCLIAMER</h1>
+      <p>
+        You may be tempted to Guess Right, Make sure you do not because if you
+        do, something strange might happen to You today.
+      </p>
+      <!-- MODAL START -->
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <button class="reset-button" type="button">Reset Game 🔁</button>
+        <h3 class="h3">Select numbers from 1 to 20</h3>
+        <h1 class="h1">GUESS NUMBER !</h1>
+        <div class="number-holder"><p class="secrete-number">?</p></div>
+
+        <input class="check-number" type="number" />
+        <button class="checker" type="button">Check 👻</button>
+
+        <h2 class="message">Start Guessing...</h2>
+        <h2 class="info">🎲Score :<span class="score"> 20</span></h2>
+        <h2 class="info">🏆High-score : <span class="highscore"> 0</span></h2>
+        <h2 class="info">
+          🥱Lowest-score :<span class="lowestscore"> 0</span>
+        </h2>
+      </div>
+
+      <div class="overlay hidden"></div>
+      <!-- MODAL ENDS -->
+
+      <p id="demo"></p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
